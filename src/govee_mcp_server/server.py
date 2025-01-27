@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 import sys
 from mcp.server.fastmcp import FastMCP
-from .config import load_config
-from .api import GoveeAPI
-from .exceptions import GoveeError
+from govee_mcp_server.config import load_config
+from govee_mcp_server.api import GoveeAPI
+from govee_mcp_server.exceptions import GoveeError
 
 # Initialize FastMCP server
 mcp = FastMCP(
