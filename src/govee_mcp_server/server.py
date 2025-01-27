@@ -5,7 +5,7 @@ from govee_mcp_server.config import load_config
 from govee_mcp_server.api import GoveeAPI
 from govee_mcp_server.exceptions import GoveeError
 
-# Initialize FastMCP server
+# Initialize FastMCP server with WARNING log level
 mcp = FastMCP(
     "govee",
     capabilities={
@@ -14,7 +14,8 @@ mcp = FastMCP(
             "version": "0.1.0",
             "description": "MCP server for controlling Govee LED devices"
         }
-    }
+    },
+    log_level='WARNING'
 )
 
 print("Loading configuration...", file=sys.stderr, flush=True)
