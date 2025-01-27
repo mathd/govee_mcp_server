@@ -1,5 +1,7 @@
 # Govee MCP Server
 
+[![smithery badge](https://smithery.ai/badge/@mathd/govee_mcp_server)](https://smithery.ai/server/@mathd/govee_mcp_server)
+
 An MCP server for controlling Govee LED devices through the Govee API.
 
 ## Setup
@@ -19,6 +21,16 @@ To get these values:
 2. Use the Govee Home app to find your device ID and SKU
 
 ## Installation
+
+### Installing via Smithery
+
+To install Govee MCP Server for Claude Desktop automatically via [Smithery](https://smithery.ai/server/@mathd/govee_mcp_server):
+
+```bash
+npx -y @smithery/cli install @mathd/govee_mcp_server --client claude
+```
+
+### Manual Installation
 
 ```bash
 # Install with pip
