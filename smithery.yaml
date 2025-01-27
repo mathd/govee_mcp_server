@@ -1,0 +1,25 @@
+# Smithery configuration file: https://smithery.ai/docs/config#smitheryyaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    # JSON Schema defining the configuration options for the MCP.
+    type: object
+    required:
+      - goveeApiKey
+      - goveeDeviceId
+      - goveeSku
+    properties:
+      goveeApiKey:
+        type: string
+        description: The API key for the Govee API.
+      goveeDeviceId:
+        type: string
+        description: The device ID for the Govee device.
+      goveeSku:
+        type: string
+        description: The SKU for the Govee device.
+  commandFunction:
+    # A function that produces the CLI command to start the MCP on stdio.
+    |-
+    (config) => ({command: 'python', args: ['src/govee_mcp_server/server.py'], env: {GOVEE_API_KEY: config.goveeApiKey, GOVEE_DEVICE_ID: config.goveeDeviceId, GOVEE_SKU: config.goveeSku}})
