@@ -1,0 +1,1 @@
+npx @modelcontextprotocol/inspector uv --directory /Users/mathieudupuis/Sources/MoovAI/blinkstick run python src/govee_mcp_server/server.py
