@@ -1,1 +1,1 @@
-npx @modelcontextprotocol/inspector uv --directory  C:\Users\mathi\sources\MoovAI\govee_mcp_server run python src\govee_mcp_server\server.py
+npx @modelcontextprotocol/inspector uv --directory  ˜\sources\govee_mcp_server run python src\govee_mcp_server\server.py
