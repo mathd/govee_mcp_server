@@ -1,3 +1,5 @@
+[![MseeP Badge](https://mseep.net/pr/mathd-govee-mcp-server-badge.jpg)](https://mseep.ai/app/mathd-govee-mcp-server)
+
 # Govee MCP Server
 
 [![smithery badge](https://smithery.ai/badge/@mathd/govee_mcp_server)](https://smithery.ai/server/@mathd/govee_mcp_server)
