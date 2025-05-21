@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "MCP server to control Govee LED devices"
 authors = []
 dependencies = [
-    "mcp[cli]",
+    "mcp[cli]>=1.9,<2.0",
     "govee-api-laggat>=0.2.2",
     "python-dotenv"
 ]
@@ -17,7 +17,8 @@ govee-cli = "govee_mcp_server.cli:cli_main"
 test = [
     "pytest>=7.0",
     "pytest-asyncio>=0.21.0",
-    "pytest-mock>=3.10.0"
+    "pytest-mock>=3.10.0",
+    "aiohttp"
 ]
 
 [build-system]
